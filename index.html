@@ -1,0 +1,123 @@
+<body>
+  <script>
+    $(document).ready(function(){
+    	$('a[href^="#"]').on('click',function (e) {
+    	    e.preventDefault();
+
+    	    var target = this.hash;
+    	    var $target = $(target);
+
+    	    $('html, body').stop().animate({
+    	        'scrollTop': $target.offset().top
+    	    }, 900, 'swing', function () {
+    	        window.location.hash = target;
+    	    });
+    	});
+    });
+    </script>
+  <!-- START NAVBAR -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <div id="wrapper1" class="container-fluid">
+    <nav class="navigation">
+      <div class="left">
+        <div class="logo">ANA BAME</div>
+        <div class="sublogo">DIGITAL CREATOR</div>
+      </div>
+
+      <div class="right">
+        <ul>
+          <li><a href="#aboutme">ABOUT ME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#footer">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- END NAVBAR -->
+
+    <!-- START HEADER -->
+
+    <div id="header" class="container-fluid">
+      <div id="welcome">
+        <h1>HELLO :)</h1>
+        <h4 style="padding-bottom: 50px">Welcome to my digital sanctuary.</h4>
+        <a href="#aboutme" class="btn btn-circle"><img src= https://img1.picmix.com/output/stamp/normal/7/9/7/2/2442797_52b31.png>
+          <i class="fa fa-angle-double-down"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- END WRAPPER -->
+
+  <!-- START ABOUT ME -->
+
+  <div id="aboutme" class="container-fluid">
+    <div class="row" style="padding-top: 50px">
+      <div class="col-md-8">
+        <h4>ABOUT ME</h4><br>
+        <p>Creative and talented alumni from Rhode Island School of Design with deep expertise in visual arts, management, and advancing technologies. I develop my artistic ability through years of experience.</p><br>
+
+        <p>From Detroit MI to Providence RI, the city is my natrual home. It's where I feel alive and comfortable.</p><br>
+
+        <p> As an ex-catholic who is no stranger to religious intensity in childhood, I'm greatly inspired by saintly tokens. Lingering within my fascination of computer graphics, I expose truths in pious histories through the lens of cinemaphotography.</p>
+
+        <p>                        </p>
+      </div>
+      <div class="col-md-4 text-center">
+        <center>
+        <img src="https://media.licdn.com/dms/image/D4E03AQE9aeSdnjfgGg/profile-displayphoto-shrink_200_200/0/1686426172993?e=1691625600&v=beta&t=5EMHnE1x3XBy_i17rBstKUszB3YQvcjqj_g1k9oZVX4" class="img-round"></img>
+        </center>
+      </div>
+    </div>
+  </div>
+
+  <!-- END ABOUT ME -->
+
+  <!-- START PORTFOLIO -->
+  <style type="text/css">
+  		a img{
+  			width: 25%;
+  		}
+  	</style>
+  <div id="portfolio" class="container-fluid">
+    <h4>PORTFOLIO</h4><br><br>
+    <div id="instafeed-container"></div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJWQ3BocjJoU3BEUTBqSnNHQnNvM1FMcmlEVG9FNmRPMEQwN3c4S0FxRlFqY3YxaXBTYTFNSjNpRUIxbUN2eXJnMlh6bXgtbmEzQlhqR05admM3UDhkdzJQX3RFaEh1aUloVDBuSmNBMUxhRURMWAZDZD'
+	});
+	userFeed.run();
+	</script>
+  <p>         </p>
+  <h5>FILMS</h5><br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A0BUYJBamPM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZQyGBJ86uTc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/32RSZ2xVtSE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/80BTkF_1GpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WBBX7y_RL0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+
+  <!-- END PORTFOLIO -->
+
+  <!-- START FOOTER -->
+  <div id="footer" class="container-fluid">
+    <a href="https://www.facebook.com/joelstephensonphoto/" target="blank" class="icon-btn facebook-icn"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/Joel_Stephenson" target="blank" class="icon-btn twitter-icn"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/joel_stephenson/" target="blank" class="icon-btn instagram-icn"><i class="fa fa-instagram"></i></a>
+    <br><br>
+    <p>COPYRIGHT © 2023 ANA BAME</p>
+    <p> For inquiries, contact me at </p>
+    <a href="mailto:anabame@gmail.com">anabame@gmail.com</a>
+
+  </div>
+
+  <!-- END FOOTER -->
+</body>
